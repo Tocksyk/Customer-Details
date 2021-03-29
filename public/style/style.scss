@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+.outerContainer{
+    background-color: blueviolet;
+    height: 90%;
+    overflow: auto;
+    font-family: 'Nunito Sans', sans-serif;
+    
+    .appContainer{
+        border: 1px solid black;
+        height: 90%;
+        width: 900px;
+        overflow: auto;
+        .navHeader{
+            display: flexbox;
+            border: black solid 1px;
+            span{
+                display: inline-block;                
+                margin: 5px;
+                padding: 5px;
+            }
+            :first-child{
+                border-right: black 1px solid;
+            }
+        }
+        .formContainer{
+            border: solid 1px black;
+            .formdetails{
+                border: solid 1px orange;
+                margin: 10px;
+                padding: 10px;
+                .formInput{
+                    display: flex;
+                    justify-content: space-evenly;
+                    border: white 1px solid;
+                    margin: 10px;
+                    padding: 10px;
+                    .firstDetail,.secondDetail{
+                        margin: 20px;
+                    }
+                    input{
+                        border: solid 0.10mm black;
+                        border-radius: 7px;
+                    }
+                }
+                .formButton{
+                    display: flex;
+                    justify-content: center;
+                    border: olivedrab solid 1px;
+                    padding: 10px;
+                    div{
+                        margin-right: 10px;
+                    }
+                    .subBtn{
+                        border: black solid 1px;
+                        border-radius: 10px;
+                        background-color: white;
+                        height: 30px;
+                        width: 70px
+                    }
+                    .attachBtn{
+                        margin-top: 1.1mm;
+                        label{
+                            border: black solid 1px;
+                            border-radius: 10px;
+                            background-color: white;
+                            padding: 3px;
+                        }
+                    }
+                }
+            }
+        }
+        // .displayContainer{
+            
+        // }
+        
+    }
+}

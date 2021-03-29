@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+.outerContainer {
+  background-color: blueviolet;
+  height: 90%;
+  overflow: auto;
+  font-family: "Nunito Sans", sans-serif;
+}
+.outerContainer .appContainer {
+  border: 1px solid black;
+  height: 90%;
+  width: 900px;
+  overflow: auto;
+}
+.outerContainer .appContainer .navHeader {
+  display: flexbox;
+  border: black solid 1px;
+}
+.outerContainer .appContainer .navHeader span {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+.outerContainer .appContainer .navHeader :first-child {
+  border-right: black 1px solid;
+}
+.outerContainer .appContainer .formContainer {
+  border: solid 1px black;
+}
+.outerContainer .appContainer .formContainer .formdetails {
+  border: solid 1px orange;
+  margin: 10px;
+  padding: 10px;
+}
+.outerContainer .appContainer .formContainer .formdetails .formInput {
+  display: flex;
+  justify-content: space-evenly;
+  border: white 1px solid;
+  margin: 10px;
+  padding: 10px;
+}
+.outerContainer .appContainer .formContainer .formdetails .formInput .firstDetail, .outerContainer .appContainer .formContainer .formdetails .formInput .secondDetail {
+  margin: 20px;
+}
+.outerContainer .appContainer .formContainer .formdetails .formInput input {
+  border: solid 0.1mm black;
+  border-radius: 7px;
+}
+.outerContainer .appContainer .formContainer .formdetails .formButton {
+  display: flex;
+  justify-content: center;
+  border: olivedrab solid 1px;
+  padding: 10px;
+}
+.outerContainer .appContainer .formContainer .formdetails .formButton div {
+  margin-right: 10px;
+}
+.outerContainer .appContainer .formContainer .formdetails .formButton .subBtn {
+  border: black solid 1px;
+  border-radius: 10px;
+  background-color: white;
+  height: 30px;
+  width: 70px;
+}
+.outerContainer .appContainer .formContainer .formdetails .formButton .attachBtn {
+  margin-top: 1.1mm;
+}
+.outerContainer .appContainer .formContainer .formdetails .formButton .attachBtn label {
+  border: black solid 1px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 3px;
+}
+
+/*# sourceMappingURL=style.css.map */

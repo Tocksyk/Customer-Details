@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title></title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="features.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    </head>
+    <body>
+        <div class="outerContainer">
+            <div class="appContainer">
+                <div class="navHeader">
+                    <span>Logo</span>
+                    <span>Test1</span>
+                    <span>Test2</span>
+                    <span>Test3</span>
+                </div>
+                <div class="formContainer">
+                    <div class="formdetails">
+                        <form>
+                            <div class="formInput">
+                                <span class="firstDetail">
+                                    <label for="cname">Name:</label>
+                                    <input type="text" name="cname" required>
+                                </span>
+                                <span class="secondDetail">
+                                    <label for="cemail">Email:</label>
+                                    <input type="email" name="cemail" required>
+                                </span>
+                            </div>
+                            <div class="formButton">
+                                <div class="attachBtn">
+                                    <label for="attach">Select File</label>
+                                    <input type="file" name="cfile" id="attach" hidden>
+                                </div>
+                                <div><button type="button" class="subBtn">Submit</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="displayContainer">
+                    <table id="custDetails" hidden>
+                        <tr>
+                            <th colspan="4" class="rowHead">Customer</th>
+                        </tr>
+                        <tr id="tableHead">
+                            <th class="rowHead">Name</th>
+                            <th class="rowHead">Email</th>
+                            <th class="rowHead">Attached File</th>
+                            <th class="rowHead">Actions</th>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
