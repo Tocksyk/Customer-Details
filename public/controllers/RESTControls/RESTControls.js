@@ -1,7 +1,7 @@
 const fileUpload = require("express-fileupload")
 const database = require("../../../database/connection")
 const rootRef = database.ref('customers')
-const autoId = rootRef.push().key
+
 
 
 exports.getData = function (req, res, next) {
@@ -12,14 +12,14 @@ exports.getData = function (req, res, next) {
         });
         res.json(arr)
     })
-    
+
 }
 
-exports.updateData = function (req,res,next){
+exports.updateData = function (req, res, next) {
     const data = {
-        name:req.body.name,
-        email:req.body.email,
-        file:req.body.file
+        name: req.body.name,
+        email: req.body.email,
+        file: req.body.file
     }
     console.log(req.body.last)
     rootRef.child(req.body.last).remove()
@@ -27,14 +27,13 @@ exports.updateData = function (req,res,next){
     res.json("Data Updated")
 }
 
-exports.deleteData = function (req,res,next){
+exports.deleteData = function (req, res, next) {
     let data = req.body.name
     rootRef.child(data).remove()
     res.json("Data Deleted")
 }
 
 exports.addData = function (req, res, next) {
-    // let arr = ['thor','thunder','Avenger']
     let fileObj = req.files.file
     let filename = String(fileObj.name)
     let t = filename.indexOf(" ")

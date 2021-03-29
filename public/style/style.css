@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 .outerContainer {
-  background-color: blueviolet;
   height: 90%;
   overflow: auto;
   font-family: "Nunito Sans", sans-serif;
 }
 .outerContainer .appContainer {
+  background-color: blueviolet;
   border: 1px solid black;
   height: 90%;
   width: 900px;
