@@ -23,20 +23,20 @@ app.get('',(req,res)=>{
 
 app.use('/ops',routerOps)
 
-app.get('/new',(req,res)=>{
-    res.sendFile('display2.html',{root:root1})
-})
+// app.get('/new',(req,res)=>{
+//     res.sendFile('display2.html',{root:root1})
+// })
 
-app.post('/new/2',(req,res)=>{
-    console.log(req.files)
-    let fileObj = req.files.file
-    let filename = fileObj.name
-    console.log(filename)
-    let paths = path.join(__dirname+'/public/upload/'+filename)
-    fileObj.mv(paths,(err)=>{
-        console.log(err)
-    })
-    res.send("File Test")
-})
+// app.post('/new/2',(req,res)=>{
+//     console.log(req.files)
+//     let fileObj = req.files.file
+//     let filename = fileObj.name
+//     console.log(filename)
+//     let paths = path.join(__dirname+'/public/upload/'+filename)
+//     fileObj.mv(paths,(err)=>{
+//         console.log(err)
+//     })
+//     res.send("File Test")
+// })
  
 module.exports = app
