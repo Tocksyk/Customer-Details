@@ -1,6 +1,6 @@
 const app = require("../app");
-
-app.listen(3000,(err,data)=>{
+const PORT = process.env.PORT || 3000;
+app.listen(PORT,(err,data)=>{
     console.log("Connected to Server")
 }).on('error',(err)=>{
     console.log("Err ",err.message)
